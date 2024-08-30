@@ -1,24 +1,21 @@
-def ceaserEnc(file:str, key:int) -> str:
-    out = ''
-    for char in file:
-        if char.isalpha():
-            out+=chr(ord(char)+key-26*int(not chr(ord(char)+key).isalpha()))
-        else:
-            out+=char
-    return out
-
-
-def ceaserDec(file:str, key:int) -> str:
-    out = ''
-    for char in file:
-        if char.isalpha():
-            out+=chr(ord(char)-key+26*int(not chr(ord(char)+key).isalpha()))
-        else:
-            out+=char
-    return out
-
-if __name__ == '__main__':
-    enc = ceaserEnc(input(), int(input()))
-    print(enc)
-    dec = ceaserDec(enc, int(input()))
-    print(dec)
+import sys
+from funcs import *
+mode = sys.argv[1]
+algo = sys.argv[2]
+match mode:
+    case '-e':
+        match algo:
+            case '-c':
+                print(caesarEnc(sys.argv[3], int(sys.argv[4])))
+            case '-r13':
+                print(caesarEnc(sys.argv[3], 13))
+            case '-a':
+                print(caesarEnc(sys.argv[3], 1))
+    case '-d':
+        match algo:
+            case '-c':
+                print(caesarDec(sys.argv[3], int(sys.argv[4])))
+            case '-r13':
+                print(caesarDec(sys.argv[3], 13))
+            case '-a':
+                print(caesarDec(sys.argv[3], 1))
