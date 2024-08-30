@@ -1,6 +1,6 @@
 CommandLine Utitlity for Uncryption- Encryption and Decryption but very unoptimized and much worse.
 Made as a school project. <br> The code is extremely ugly because of the restrictions placed on us.
-#<br><h><b>Usage</b></h><br>
+#Usage
 <ol>
   <li>Clone the Repo into a suitable location and `cd` into it</li>
   <li>run `python main.py -[mode] -[algorithm] [message] [key(optional, depending on algorithm chosen)]`</li>
