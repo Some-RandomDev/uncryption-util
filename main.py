@@ -16,7 +16,7 @@ match mode:
     case '-d':
         match algo:
             case '-c':
-                outF.write(caesarDec(inpF.read(), int(sys.argv[4])))
+                outF.write(caesarDec(inpF.read(), int(sys.argv[5])))
             case '-r13':
                 outF.write(caesarDec(inpF.read(), 13))
             case '-a':
