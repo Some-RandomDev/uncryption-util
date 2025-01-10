@@ -2,8 +2,15 @@ CommandLine Utitlity for Uncryption- Encryption and Decryption but very unoptimi
 Made as a school project. <br> The code is extremely ugly because of the restrictions placed on us.
 # Usage 
 1. Clone the Repo into a suitable location and `cd` into it
-2. run `python main.py -[mode] -[algorithm] [message] [key(optional, depending on algorithm chosen)]`
-<br>As of now, only Caeser Cipher and some of its derivative algorithms (such as the August and ROT-13 ciphers) are supported.
+2. run `python main.py -[mode] -[algorithm] [path of input file] [path of output file] [key(optional, depending on algorithm chosen)]`
+
+> **NOTE:** The output file will completely be overwritten with the encrypted/decrypted data. It is therefore reccomended to use an empty file for dumping the output.
+
+> **NOTE:** If the output file does not exist already, the program will create a new file with the name provided and dump the output there.
+
+> **NOTE:** Merely the name of the file(s) will suffice if the file(s) reside(s) in the same directory as `main.py`. Otherwise, the complete paths of the file(s) is/are requried.
+
+As of now, only Caeser Cipher and some of its derivative algorithms (such as the August and ROT-13 ciphers) are supported.
 <br>All flags types, along with thier possible flags are described breifly below-<br>
 <table>
   <tr> 
