@@ -13,6 +13,10 @@ match mode:
                 outF.write(caesarEnc(inpF.read(), 13))
             case '-a':
                 outF.write(caesarEnc(inpF.read(), 1))
+            case '-p':
+                outF.write(playfairEnc(inpF.read(), sys.argv[5]))
+            case '-v':
+                outF.write(vigenereEnc(inpF.read(), sys.argv[5]))
     case '-d':
         match algo:
             case '-c':
@@ -21,3 +25,7 @@ match mode:
                 outF.write(caesarDec(inpF.read(), 13))
             case '-a':
                 outF.write(caesarDec(inpF.read(), 1))
+            case '-p':
+                outF.write(playfairDec(inpF.read(), sys.argv[5]))
+            case '-v':
+                outF.write(vigenereDec(inpF.read(), sys.argv[5]))
