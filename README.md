@@ -30,8 +30,8 @@ As of now, only Caeser Cipher and some of its derivative algorithms (such as the
     <td>Specifies that the script is going to be used for the pourposes of decryption</td>
   </tr>
   <tr>
-    <td rowspan="3">-[algorithm]</td>
-    <td rowspan="3">Specifies the algorithm to be used for cryptography</td>
+    <td rowspan="5">-[algorithm]</td>
+    <td rowspan="5">Specifies the algorithm to be used for cryptography</td>
     <td>-c</td>
     <td>Specifies that Caesar Cipher is going to be used for cryptography</td>
   </tr>
@@ -39,9 +39,16 @@ As of now, only Caeser Cipher and some of its derivative algorithms (such as the
     <td>-r13</td>
     <td>Specifies that ROT-13 is going to be used for cryptography</td>
   </tr>
-  
   <tr>
     <td>-a</td>
     <td>Specifies that August Cipher is going to be used for cryptography</td>
+  </tr>
+  <tr>
+    <td>-p</td>
+    <td>Specifies that Playfair Cipher is going to be used for cryptography</td>
+  </tr>
+  <tr>
+    <td>-v</td>
+    <td>Specifies that Vigenere Cipher is going to be used for cryptography</td>
   </tr>
 </table>
